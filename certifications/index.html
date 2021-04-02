@@ -41,7 +41,7 @@
         CsvToHtmlTable.init({
             csv_path: "data/sertifikalar.csv",
             element: "table-container",
-            allow_download: false,
+            allow_download: true,
             csv_options: {
                 separator: ",",
                 delimiter: '"'
@@ -50,7 +50,7 @@
                 paging: false
             },
             custom_formatting: [
-                [4, format_link]
+                [1, format_link], [2, format_link], [3, format_link]
             ]
         });
     </script>
